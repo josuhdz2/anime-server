@@ -4,7 +4,7 @@ const cors=require('cors');
 const bodyParser=require('body-parser');
 const app=express();
 var port=process.env.PORT||3000;
-const database='mongodb://127.0.0.1:27017/animes';
+const database='mongodb+srv://josue_hc:lj4uy15HYbtNs6RN@cluster0.zqufc4z.mongodb.net/animes?retryWrites=true&w=majority';
 mongoose.set('strictQuery', false);
 mongoose.connect(database)
 .then(()=>
